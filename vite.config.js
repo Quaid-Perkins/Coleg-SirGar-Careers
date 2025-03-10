@@ -4,5 +4,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [solid(), tailwindcss()],
-  base: "/career_compass",
+  base: "/career_compass/",
 });
