@@ -9,35 +9,35 @@ const routes = [
     component: lazy(() => import("./pages/not_found")),
   },
   {
-    path: "/",
+    path: "/career_compass/",
     component: lazy(() => import("./pages/home")),
   },
   {
-    path: "/part-time-jobs",
+    path: "/career_compass/part-time-jobs",
     component: lazy(() => import("./pages/part_time_jobs")),
   },
   {
-    path: "/volunteering",
+    path: "/career_compass/volunteering",
     component: lazy(() => import("./pages/volunteering")),
   },
   {
-    path: "/new-skills",
+    path: "/career_compass/new-skills",
     component: lazy(() => import("./pages/new_skills")),
   },
   {
-    path: "/resources",
+    path: "/career_compass/resources",
     component: lazy(() => import("./pages/resources")),
   },
   {
-    path: "/travel",
+    path: "/career_compass/travel",
     component: lazy(() => import("./pages/travel")),
   },
   {
-    path: "/sports",
+    path: "/career_compass/sports",
     component: lazy(() => import("./pages/sports")),
   },
   {
-    path: "/contact",
+    path: "/career_compass/contact",
     component: lazy(() => import("./pages/contact")),
   },
 ];
