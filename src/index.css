@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+
+/* Setting the base (light) Theme */
+@theme {
+	--color-base-100: #000;
+	--color-base-200: #f8f7ff;
+	--color-base-300: #f8f7ff;
+	--color-primary: #0758aa;
+	--color-secondary: #173d96;
+	--color-tertiary: #edb312;
+}
+
+/* Chaging the colours for Dark Theme */
+@utility theme-dark {
+	--color-base-100: #fff;
+	--color-base-200: #f8f7ff;
+	--color-base-300: #0c0923;
+	--color-primary: #0f176b;
+	--color-secondary: #0e095e;
+	--color-tertiary: #bd6e08;
+}
+
+/* Setting the Font of the Website */
+* {
+	font-family: "Rubik", sans-serif;
+}
+
+/* 
+	When the Theme is set to "system",
+	if the user's device is set to light mode, this does nothing,
+	if the user's device is set to dark mode, this will apply the Dark Theme colours.
+*/
+#root[data-theme="system"] {
+	@apply dark:theme-dark;
+}
+
+/* When the Theme is set to "dark", this will apply the Dark Theme colours */
+#root[data-theme="dark"] {
+	@apply theme-dark;
+}
