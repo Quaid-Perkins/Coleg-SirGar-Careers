@@ -4,17 +4,21 @@ import { createSignal } from "solid-js";
 import { createStore } from "solid-js/store";
 
 const Contact = () => {
+	// Data variable for the Email infomation that will be used when sent.
 	const [email, setEmail] = createStore({
 		name: "",
 		userEmail: "",
 		message: "",
 	});
 
+	// Repose when sending Email, if it succeeded or failed, this will tell the user.
 	const [response, setResponse] = createSignal("");
 
 	const handleSubmit = (e) => {
 		// Prevent page refresh.
 		e.preventDefault();
+		// Clear email message
+		setEmail({ message: "" });
 		// Tell The user the Email has been Sent (For proper implementation, Add errors.)
 		setResponse("Email sent! (Example, not functional)");
 		// Currently just printing the "email" information.
@@ -29,6 +33,7 @@ const Contact = () => {
 				<Meta name="title" content="Contact | Career Compass" />
 				<Meta name="description" content="Contact Coleg SirGâr from Career Compass" />
 			</MetaProvider>
+			{/* Contact Page information. */}
 			<div className="grid grid-cols-2 grow gap-24">
 				<div className="flex flex-col">
 					<h1 className="text-6xl font-bold mb-2">Want to Contact us?</h1>
@@ -38,6 +43,7 @@ const Contact = () => {
 						to properly be able to assist you with the issue, we will have our team email
 						you back when available.
 					</p>
+					{/* Social Media links for Coleg SirGâr. */}
 					<div className="flex my-8 gap-2">
 						<a
 							href="https://www.instagram.com/colegsirgar/"
@@ -73,8 +79,9 @@ const Contact = () => {
 						</a>
 					</div>
 				</div>
+				{/* Email form for the information to be sent. */}
 				<form onSubmit={handleSubmit} className="flex flex-col gap-4 items-center">
-					{/*  */}
+					{/* Name form elements. */}
 					<span className="flex flex-col w-full">
 						<label for="name">Name</label>
 						<input
@@ -88,7 +95,7 @@ const Contact = () => {
 							className="p-2 rounded-sm"
 						/>
 					</span>
-					{/*  */}
+					{/* Email form elements. */}
 					<span className="flex flex-col w-full">
 						<label for="email">Email</label>
 						<input
@@ -102,7 +109,7 @@ const Contact = () => {
 							className="p-2 rounded-sm"
 						/>
 					</span>
-					{/*  */}
+					{/* Message form elements. */}
 					<span className="flex flex-col w-full">
 						<label for="message">Message</label>
 						<textarea
@@ -115,7 +122,7 @@ const Contact = () => {
 							className="h-60 p-2 resize-none rounded-sm"
 						></textarea>
 					</span>
-					{/*  */}
+					{/* Submit button */}
 					<button
 						className="w-min px-4 py-2 rounded-lg text-base-100 font-medium bg-tertiary shadow-[inset_0_0_0_2px] 
 		  hover:bg-transparent hover:shadow-tertiary transition-all duration-200"
