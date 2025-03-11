@@ -29,14 +29,14 @@ const Contact = () => {
 				<Meta name="title" content="Contact | Career Compass" />
 				<Meta name="description" content="Contact Coleg SirGâr from Career Compass" />
 			</MetaProvider>
-			<div className="grid grid-cols-2 max-w-5xl grow gap-24">
+			<div className="grid grid-cols-2 grow gap-24">
 				<div className="flex flex-col">
 					<h1 className="text-6xl font-bold mb-2">Want to Contact us?</h1>
 					<p>
-						Use this to send an email to our support team if you have any issues or want
-						some help! Please fill out all the required information for us to properly be
-						able to assist you with the issue, we will have our team email you back when
-						available.
+						Use this to send an email to our Coleg SirGâr support team if you have any
+						issues or want some help! Please fill out all the required information for us
+						to properly be able to assist you with the issue, we will have our team email
+						you back when available.
 					</p>
 					<div className="flex my-8 gap-2">
 						<a

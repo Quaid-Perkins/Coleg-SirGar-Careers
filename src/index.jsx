@@ -16,7 +16,7 @@ const App = ({ children }) => {
 			{/* Displaying the navbar and footer on every Page. */}
 			<NavBar />
 			{/* Setting base styles for each Page. */}
-			<main className="flex justify-center items-center gap-4 py-8 h-full w-full text-base-100  overflow-x-hidden">
+			<main className="flex justify-center items-center gap-4 py-8 h-full w-full *:max-w-5xl text-base-100">
 				{children}
 			</main>
 			<Footer />
