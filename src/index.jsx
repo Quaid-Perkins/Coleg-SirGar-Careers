@@ -11,17 +11,17 @@ import Routes from "./routes";
 
 // Main App component.
 const App = ({ children }) => {
-	return (
-		<>
-			{/* Displaying the navbar and footer on every Page. */}
-			<NavBar />
-			{/* Setting base styles for each Page. */}
-			<main className="flex justify-center items-center gap-4 py-8 h-full w-full *:max-w-5xl text-base-100">
-				{children}
-			</main>
-			<Footer />
-		</>
-	);
+  return (
+    <>
+      {/* Displaying the navbar and footer on every Page. */}
+      <NavBar />
+      {/* Setting base styles for each Page. */}
+      <main className="flex justify-center items-center gap-4 py-8 h-full w-full *:max-w-5xl text-base-100">
+        {children}
+      </main>
+      <Footer />
+    </>
+  );
 };
 
 // Rendering the SolidJS code onto the DOM with the parent element of "root".
