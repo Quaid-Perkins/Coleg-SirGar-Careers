@@ -34,10 +34,10 @@ const Contact = () => {
 				<Meta name="description" content="Contact Coleg SirGâr from Career Compass" />
 			</MetaProvider>
 			{/* Contact Page information. */}
-			<div className="grid grid-cols-2 grow gap-24">
+			<div className="grid grid-cols-2 gap-24">
 				<div className="flex flex-col">
 					<h1 className="text-6xl font-bold mb-2">Want to Contact us?</h1>
-					<p>
+					<p className="text-justify">
 						Use this to send an email to our Coleg SirGâr support team if you have any
 						issues or want some help! Please fill out all the required information for us
 						to properly be able to assist you with the issue, we will have our team email
@@ -125,7 +125,7 @@ const Contact = () => {
 					{/* Submit button */}
 					<button
 						className="w-min px-4 py-2 rounded-lg text-base-100 font-medium bg-tertiary shadow-[inset_0_0_0_2px] 
-		  hover:bg-transparent hover:shadow-tertiary transition-all duration-200"
+						hover:bg-transparent hover:shadow-tertiary transition-all duration-200"
 					>
 						Submit
 					</button>
