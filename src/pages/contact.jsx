@@ -17,8 +17,6 @@ const Contact = () => {
 	const handleSubmit = (e) => {
 		// Prevent page refresh.
 		e.preventDefault();
-		// Clear email message
-		setEmail({ message: "" });
 		// Tell The user the Email has been Sent (For proper implementation, Add errors.)
 		setResponse("Email sent! (Example, not functional)");
 		// Currently just printing the "email" information.
