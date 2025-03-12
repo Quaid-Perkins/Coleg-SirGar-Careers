@@ -25,7 +25,7 @@ const NotFound = () => {
 				<A
 					href="/career_compass/"
 					className="w-max my-8 px-4 py-2 rounded-lg text-base-100 font-medium bg-tertiary shadow-[inset_0_0_0_2px] 
-            hover:bg-transparent hover:shadow-tertiary transition-all duration-200"
+					hover:bg-transparent hover:shadow-tertiary transition-all duration-200"
 				>
 					Return Home
 				</A>

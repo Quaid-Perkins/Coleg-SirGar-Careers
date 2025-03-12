@@ -92,7 +92,7 @@ const Contact = () => {
 							value={email.name}
 							onChange={(e) => setEmail({ name: e.target.value })}
 							placeholder="Your name.."
-							className="p-2 rounded-sm"
+							className="p-2 rounded-sm shadow-[inset_0_0_0_2px] shadow-primary/50"
 						/>
 					</span>
 					{/* Email form elements. */}
@@ -106,7 +106,7 @@ const Contact = () => {
 							value={email.userEmail}
 							onChange={(e) => setEmail({ userEmail: e.target.value })}
 							placeholder="Your Email.."
-							className="p-2 rounded-sm"
+							className="p-2 rounded-sm shadow-[inset_0_0_0_2px] shadow-primary/50"
 						/>
 					</span>
 					{/* Message form elements. */}
@@ -119,7 +119,7 @@ const Contact = () => {
 							value={email.message}
 							onChange={(e) => setEmail({ message: e.target.value })}
 							placeholder="Write something.."
-							className="h-60 p-2 resize-none rounded-sm"
+							className="h-60 p-2 resize-none rounded-sm shadow-[inset_0_0_0_2px] shadow-primary/50"
 						></textarea>
 					</span>
 					{/* Submit button */}
