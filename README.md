@@ -24,3 +24,25 @@ Requirements:
   - [**SolidJS**](https://solidjs.com/): a Javascript library to build pages.
   - [**Tailwind**](https://tailwindcss.com/): a CSS utility framework.
 - Coded and ran with [**VSCodium**](https://vscodium.com/) and [**Bun**](https://bun.sh).
+
+## How to run locally:
+
+> [!IMPORTANT]
+> You need `git` installed and `npm` (`pnpm`), `bun` or `yarn` installed to run this.
+
+```sh
+git clone https://github.com/Quaid-Perkins/career_compass.git # install git here - https://git-scm.com/downloads
+
+cd ./career_compass # move into the new folder
+
+npm install # or `bun install`, or `yarn install`
+
+npm run dev # or `bun dev` or `yarn run dev`
+```
+
+Then click on the link that gets outputted into the terminal. e.g:
+
+```sh
+VITE v6.2.1  ready in x ms
+  ➜  Local:   http://localhost:5173/career_compass/
+```
