@@ -37,7 +37,7 @@ cd ./career_compass # move into the new folder
 
 npm install # or `bun install`, or `yarn install`
 
-npm run dev # or `bun dev` or `yarn run dev`
+npm run dev # or `bun dev`, or `yarn run dev`
 ```
 
 Then click on the link that gets outputted into the terminal. e.g:
