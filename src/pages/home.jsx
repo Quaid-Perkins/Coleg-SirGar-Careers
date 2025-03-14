@@ -32,7 +32,7 @@ const Home = () => {
 							Part-Time Jobs
 						</A>
 						<A
-							href="/career_compass/part-time-jobs"
+							href="/career_compass/contact"
 							className="w-max px-4 py-2 rounded-lg text-base-100 font-medium shadow-[inset_0_0_0_2px] 
 		          hover:underline hover:shadow-tertiary transition-all duration-200"
 						>
