@@ -29,7 +29,7 @@ const PartTimeJobs = () => {
 				</div>
 				<img
 					src="/career_compass/assets/images/part_time_job.png"
-					alt="student sitting at desk on laptop"
+					alt="a man reaching his hand out to hire someone"
 				/>
 			</div>
 		</>
